@@ -95,7 +95,7 @@ namespace project01
         static void Main(string[] args)
         {            
                 Movie m1 = new Movie("Inception", "Sci-Fi", 9);
-                User u1 = new User("Malak");
+                User u1 = new User("ALI");
 
                 u1.WatchMovie(m1);
                 u1.RateMovie(m1, 10);
