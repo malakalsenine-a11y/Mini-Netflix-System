@@ -50,15 +50,17 @@ namespace project01
                 Name = name;
                 watchCount = 0;
             }
+
+            // WatchSession Method:
+
+            public void WatchMovie(Movie movie)
+            {
+                watchCount++;
+                Console.WriteLine($"{Name} is watching {movie.Title}");
+            }
         }
 
-        // WatchSession Class:
-
-        public void WatchMovie(Movie movie)
-        {
-            watchCount++;
-            Console.WriteLine($"{Name} is watching {movie.Title}");
-        }
+        
 
 
         static void Main(string[] args)
