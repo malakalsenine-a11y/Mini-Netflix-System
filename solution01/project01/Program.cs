@@ -1,4 +1,6 @@
-﻿namespace project01
+﻿using System.Xml.Linq;
+
+namespace project01
 {
     internal class Program
     {
@@ -50,7 +52,13 @@
             }
         }
 
+        // WatchSession Class:
 
+        public void WatchMovie(Movie movie)
+        {
+            watchCount++;
+            Console.WriteLine($"{Name} is watching {movie.Title}");
+        }
 
 
         static void Main(string[] args)
