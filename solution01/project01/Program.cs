@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-
+        //Movie Class:
         class Movie
         {
             public string Title { get; set; }
@@ -29,6 +29,29 @@
                 Rating = rating;
             }
         }
+
+        //User Class:
+
+        class User
+        {
+            public string Name { get; set; }
+
+            private int watchCount;
+
+            public int WatchCount
+            {
+                get { return watchCount; }
+            }
+
+            public User(string name)
+            {
+                Name = name;
+                watchCount = 0;
+            }
+        }
+
+
+
 
         static void Main(string[] args)
         {
