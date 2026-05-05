@@ -58,9 +58,26 @@ namespace project01
                 watchCount++;
                 Console.WriteLine($"{Name} is watching {movie.Title}");
             }
+
+            //RateMovie Method:
+
+            public void RateMovie(Movie movie, int rate)
+            {
+                if (rate >= 1 && rate <= 10)
+                {
+                    movie.Rating = rate;
+                    Console.WriteLine($"{Name} rated {movie.Title} with {rate}");
+                }
+                else
+                {
+                    Console.WriteLine("Invalid rating!");
+                }
+            }
+
+
         }
 
-        
+
 
 
         static void Main(string[] args)
